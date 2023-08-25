@@ -1,0 +1,158 @@
+/*  */
+
+section {
+  scroll-margin-top: 300px;
+  margin-bottom: 50px;
+}
+
+/* Hover Underline */
+.underline a {
+  position: relative;
+  padding-bottom: 0.25rem;
+}
+
+.underline a::after {
+  content: "";
+  transition: all 1s;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  position: absolute;
+  transition: width 0.25s ease-out;
+  bottom: 0;
+  left: 0;
+}
+
+.underline a:hover::after {
+  width: 100%;
+}
+/* Hover Underline end */
+
+.main {
+  background-color: #f1f3ff;
+}
+
+/* Logo kotak biru */
+.main-logo {
+  border: 5px solid #0d28a6;
+  height: 34px;
+  width: 100px;
+  background-color: #0d28a6;
+  display: inline-block;
+
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Button Navbar */
+
+.navbar-button {
+  width: 81px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #5cb85f;
+  border: none;
+  color: #fff;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.position-gambar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button Hero */
+.btn1 {
+  background-color: #5cb85f;
+  border: #5cb85f;
+  color: white;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  font-size: 14px;
+  display: inline-block;
+  justify-content: center;
+  transform-origin: center;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Button Nav Carousel */
+.btn2 {
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* Button Nav Carousel */
+.btn3 {
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  font-weight: bolder;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.btn1:hover {
+  opacity: 0.9;
+}
+
+.btn2:hover {
+  background-color: #5cb85f;
+}
+
+.btn3:hover {
+  background-color: #5cb85f;
+}
+
+.footer-font h3 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* footer icon sosmed */
+.btn-social {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  transform-origin: center;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #offcanvasNavbar {
+    width: 50%;
+  }
+
+  .FAQ-Position h3,
+  .FAQ-Position p {
+    text-align: center;
+  }
+}
